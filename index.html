@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="HundredMail is email that&#39;s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access." />
+
+<title>HundredMail</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="coming-soon">
+
+<h1>HundredMail</h1>
+
+<p>Our exciting website is coming soon! Check back later.</p>
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfKycURvIOIfAwWxEzyY75czAMtpKK9gp3Fy_oOKX2XJiZAlA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+	<div id="subscribe">
+		<input type="text" name="entry.127057172" id="entry.127057172" placeholder="Enter your email address...">
+		<input type="submit" value="Subscribe">
+		<div class="clear"></div>
+	</div>
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+</div>
+
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
+
+</body>
+</html>
